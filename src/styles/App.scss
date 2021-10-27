@@ -1,0 +1,171 @@
+.main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 1000px;
+  width: auto;
+  max-width: 1300px;
+  height: 90vh;
+  max-height: 90vh;
+  border: 4px solid #200a74;
+  padding-left: 10em;
+  padding-right: 10em;
+  box-shadow: 10px 15px tomato;
+}
+
+.header {
+  display: flex;
+  text-align: center;
+  color: #200a74;
+  text-shadow: 3px 2px #00ffff;
+  margin-bottom: 5em;
+  margin-top: 2em;
+}
+
+img.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+img.cup {
+  display: inline;
+  width: '60px';
+  height: '60px';
+
+  
+}
+
+.main-container {
+  width: 100%;
+  height: 70%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.start-button {
+  width: 300px;
+  height: 200px;
+  background-color: black;
+  color: white;
+  border: 6px solid #333333;
+  box-shadow: 5px 5px rgb(179, 179, 179);
+  font-size: x-large;
+  font-weight:  normal;
+  border-radius: 15px;
+}
+
+.start-button:hover {
+  cursor: pointer;
+  background-color: #111111;
+}
+
+.text-t {
+  font-size: 2em;
+  font-weight: 600;
+
+  
+}
+
+.text-team {
+  font-size: 2em;
+  font-weight: 600;
+
+  width: 15em;
+  padding-left: 3em;
+  
+}
+
+.team-box {
+  display: flex;
+}
+
+
+select {
+  font-size: 2em;
+  background-color: black;
+  color: white;
+  border: 6px solid #333333;
+  box-shadow: 5px 5px rgb(179, 179, 179);
+}
+
+select:hover {
+  cursor: pointer;
+  background-color: #111111;
+}
+
+.team-container {
+  display: block;
+  width: 100%;
+  margin-top: 4em;
+}
+
+.logo-box {
+  display: block;
+  width: 20em;
+  height: 20em;
+}
+
+.predict-btn {
+  width: 300px;
+  height: 100px;
+  color: white;
+  background-color: black;
+  border: 6px solid #333333;
+  font-size: xx-large;
+  box-shadow: 5px 5px rgb(179, 179, 179);
+}
+
+.predict-btn:hover {
+  background-color: #111111;
+  border: 6px solid #333333;
+  cursor: pointer; 
+}
+
+.pred {
+  display: flex;
+  margin-top: 10em;
+  
+  
+}
+
+
+.NO {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 100px;
+  background-color:  #c0392b ;
+  box-shadow: 5px 5px  #cd6155 ;
+}
+
+.MAYBE {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 100px;
+  background-color:   #d4ac0d  ;
+  box-shadow: 5px 5px  #f7dc6f ;
+}
+
+.YES {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 100px;
+  background-color:   #27ae60  ;
+  box-shadow: 5px 5px  #7dcea0 ;
+}
+
+
+.box-text {
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px black;
+  font-size: xx-large;
+}
