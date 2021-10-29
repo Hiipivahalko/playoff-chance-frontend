@@ -21,7 +21,8 @@ const Team = () => {
 
   useEffect( async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/teams`)
+      console.log('backend_URL:', process.env.REACT_APP_BACKEND_URL);
+      const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/teams`)
       //console.log(res.data.data);
       setTeams(res.data.data)
     } catch (err) {
@@ -44,17 +45,17 @@ const Team = () => {
       return;
     }
 
-    console.log(event.target.value);
+    //console.log(event.target.value);
     setTeam(event.target.value)
   }
 
   const predictChance = async (event) => {
     event.preventDefault()
-    console.log('predicted');
+    //console.log('predicted');
     const data = {'team': team}
     try {
       const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}predict`, data)
-      console.log(`res: ${res.data.data}`);
+      //console.log(`res: ${res.data.data}`);
       setPrediction(res.data.data)
     } catch (err) {
       console.log(`error: ${err}`);

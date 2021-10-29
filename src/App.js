@@ -40,7 +40,7 @@ const Main = () => {
     //history.push('/')
   }
 
-  console.log(start);
+  //console.log(start);
 
   if (start) {
     return <Redirect to="/teams" />
