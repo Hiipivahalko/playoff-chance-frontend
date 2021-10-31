@@ -7,12 +7,13 @@
   min-width: 1000px;
   width: auto;
   max-width: 1300px;
-  height: 90vh;
-  max-height: 90vh;
+  height: 97vh;
+  max-height: 97vh;
   border: 4px solid #200a74;
   padding-left: 10em;
   padding-right: 10em;
   box-shadow: 10px 15px tomato;
+  overflow: auto;
 }
 
 .header {
@@ -25,8 +26,8 @@
 }
 
 img.logo {
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 95%;
   object-fit: contain;
 }
 
@@ -46,7 +47,7 @@ img.cup {
   display: flex;
 }
 
-.start-button {
+.start-btn {
   width: 300px;
   height: 200px;
   background-color: black;
@@ -56,15 +57,41 @@ img.cup {
   font-size: x-large;
   font-weight:  normal;
   border-radius: 15px;
+  margin: 20px;
+  text-align: center;
 }
 
-.start-button:hover {
+button {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.menu-btn {
+  background-color: black;
+  color: white;
+  border: 6px solid #333333;
+  box-shadow: 5px 5px rgb(179, 179, 179);
+  font-size: x-large;
+  font-weight:  normal;
+  border-radius: 15px;
+  margin: 20px;
+  text-align: center;
+  width: auto;
+  height: auto;
+
+}
+
+.start-btn:hover {
+  cursor: pointer;
+  background-color: #111111;
+}
+
+.menu-btn:hover {
   cursor: pointer;
   background-color: #111111;
 }
 
 .text-t {
-  font-size: 2em;
+  font-size: large;
   font-weight: 600;
 
   
@@ -75,8 +102,32 @@ img.cup {
   font-weight: 600;
 
   width: 15em;
+  text-align: center;
   //padding-left: 3em;
+  margin-right: auto;
+  margin-left: auto;
   
+}
+
+.text-team2 {
+  font-size: 2em;
+  font-weight: 600;
+
+  width: 15em;
+
+  
+}
+
+.error {
+  font-size: 2em;
+  font-weight: 600;
+
+  width: 15em;
+  text-align: center;
+  //padding-left: 3em;
+  margin-right: auto;
+  margin-left: auto;
+  color: red;
 }
 
 .team-box {
@@ -85,7 +136,7 @@ img.cup {
 
 
 select {
-  font-size: 2em;
+  font-size: medium;
   background-color: black;
   color: white;
   border: 6px solid #333333;
@@ -125,12 +176,7 @@ select:hover {
   cursor: pointer; 
 }
 
-.pred {
-  display: flex;
-  margin-top: 10em;
-  
-  
-}
+
 
 
 .NO {
@@ -141,6 +187,8 @@ select:hover {
   height: 100px;
   background-color:  #c0392b ;
   box-shadow: 5px 5px  #cd6155 ;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .MAYBE {
@@ -151,6 +199,9 @@ select:hover {
   height: 100px;
   background-color:   #d4ac0d  ;
   box-shadow: 5px 5px  #f7dc6f ;
+  //margin: auto auto 0 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .YES {
@@ -161,6 +212,8 @@ select:hover {
   height: 100px;
   background-color:   #27ae60  ;
   box-shadow: 5px 5px  #7dcea0 ;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -170,4 +223,132 @@ select:hover {
   color: white;
   text-shadow: 2px 2px black;
   font-size: xx-large;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  padding: 2em;
+}
+
+.row2 {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+  justify-content: right;
+  text-align: right;
+}
+
+.col {
+  display: inline;
+}
+
+
+
+.col2 {
+  display: inline-block;
+  //align-items: right;
+  justify-content: right;
+  text-align: right;
+  width: 50%;
+  height: auto;
+}
+
+.col3 {
+  display: inline;
+  padding-left: 10em;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+  border-left: 3px solid darkgrey;
+}
+
+.col4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 50%;
+  padding: 1em;
+}
+
+.lable-col {
+  //display: block;
+  //padding: 0;
+  color: #200a74;
+  font-size: medium;
+  width: auto;
+}
+
+form {
+  display: flex;
+  width: 100%;
+}
+
+input {
+  margin: 9px 9px 9px 0;
+  display: block;
+  //padding: ;
+  font-size: medium;
+}
+
+.slider {
+  //-webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #c0392b;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  //-webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 24px;
+  border: 0;
+  //background-image: url('../images/cup.png');
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 23px;
+  height: 24px;
+  border: 0;
+  //background-image: url('../images/cup.png');
+  cursor: pointer;
+}
+
+.form2 {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  color: #200a74;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+  align-items: center;
+  justify-content: center;
+}
+
+.form3 {
+  display: flex;
+  width: 100%;
+  margin-top: 7em;
 }

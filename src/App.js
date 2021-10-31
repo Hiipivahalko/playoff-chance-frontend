@@ -2,19 +2,18 @@ import './styles/App.scss';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
 
-import Logo from './components/Logo';
-
 import cup from './images/cup.png';
 import {
   Router,
   Route,
   Redirect,
   Switch,
-  useHistory,
   Link
 } from 'react-router-dom'
 
-import Team from './components/Team'
+import Select from './components/Select'
+import Input from './components/Input';
+import Simulate from './components/Simulate';
 
 const Header = () => {
   return (
@@ -23,6 +22,12 @@ const Header = () => {
         <img className="cup" src={cup} alt='stanley cup'/>
       </Link>
       <h1>Change to Playoff</h1>
+      <Link to='/simulate'>
+        <button className='menu-btn' >Simulate</button>
+      </Link>
+      <Link to='/input'>
+        <button className='menu-btn' >Input</button>
+      </Link>
     </div>
   )
 }
@@ -30,37 +35,31 @@ const Header = () => {
 const Main = () => {
 
   const [start, setStart ] = useState(false)
-  //const history = useHistory()
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    //const res = await axios.get(`http://localhost`)
-    console.log(process.env.REACT_APP_BACKEND_URL);
-    setStart(true)
-    //history.push('/')
+    try {
+      const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}status`)
+      setStart(true)
+    } catch (err) {
+      console.log(err.message);
+    }
   }
 
-  //console.log(start);
 
   if (start) {
-    return <Redirect to="/teams" />
+    return <Redirect to="/select" />
   }
   
   return (
     <div className='main-container'>
-      
-      <button className='start-button' onClick={handleSubmit}>Start application</button>
+      <button className='start-btn' onClick={handleSubmit}>Start application</button>
     </div>
   )
 }
 
 
-
 const App = () => {
-
-  
-
-  
 
   return (
     <div className='main'>
@@ -69,14 +68,19 @@ const App = () => {
  
         <Switch>
           
-          <Route path='/teams'>
-            <Team />
-          </Route> 
+          <Route path='/input'>
+            <Input />
+          </Route>
+          <Route path='/select'>
+            <Select />
+          </Route>
+          <Route path='/simulate'>
+            <Simulate />
+          </Route>
           <Route path='/'>
             <Main />
           </Route>  
         </Switch>
-  
     </div>
   )
 }
