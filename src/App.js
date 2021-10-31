@@ -35,13 +35,17 @@ const Header = () => {
 const Main = () => {
 
   const [start, setStart ] = useState(false)
+  const [loading, setLoading ] = useState(false)
 
   const handleSubmit = async (event) => {
     event.preventDefault()
+    setLoading(true)
     try {
       const res = await axios.get(`${process.env.REACT_APP_BACKEND_URL}status`)
       setStart(true)
+      setLoading(false)
     } catch (err) {
+      setLoading(false)
       console.log(err.message);
     }
   }
@@ -53,7 +57,7 @@ const Main = () => {
   
   return (
     <div className='main-container'>
-      <button className='start-btn' onClick={handleSubmit}>Start application</button>
+      {loading ? <p>Setting up backend...</p> : <button className='start-btn' onClick={handleSubmit}>Start application</button>}
     </div>
   )
 }
