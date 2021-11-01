@@ -12,19 +12,19 @@ const Prediction = ({team, predictChance}) => {
         <div className='col2'>
           <div className='row2'>
             <label className='lable-col'>PIM:</label>
-            <input type='number' id='pim'/>
+            <input type='number' id='pim' step="0.001"/>
           </div>
           <div className='row2'>
             <label className='lable-col'>Forward performance:</label>
-            <input type='number' id='forward_p'/>
+            <input type='number' id='forward_p' step="0.001"/>
           </div>
           <div className='row2'>
             <label className='lable-col'>Defence performance:</label>
-            <input type='number' id='defence_p'/>
+            <input type='number' id='defence_p' step="0.001"/>
           </div>
           <div className='row2'>
             <label className='lable-col'>Goalie performance:</label>
-            <input type='number' id='goalie_p'/>
+            <input type='number' id='goalie_p' step="0.001"/>
           </div>
           <div className='row2'>
             <label className='lable-col'>Star players:</label>
@@ -32,41 +32,41 @@ const Prediction = ({team, predictChance}) => {
           </div>
           <div className='row2'>
             <label className='lable-col'>GF/GP:</label>
-            <input type='number' id='gf_gp'/>
+            <input type='number' id='gf_gp' step="0.001"/>
           </div>
           <div className='row2'>
             <label className='lable-col'>GA/GP:</label>
-            <input type='number' id='ga_gp'/>
+            <input type='number' id='ga_gp' step="0.001"/>
           </div>
         </div>
         <div className='col2'>
           <div className='row2'>
             <label className='lable-col'>PP%</label>
-            <input type='number' id='pp'/>
+            <input type='number' id='pp' step="0.001"/>
           </div>
           <div className='row2'>
             <label className='lable-col'>PK%:</label>
-            <input type='number' id='pk'/>
+            <input type='number' id='pk' step="0.001"/>
           </div>
           <div className='row2'>
             <label className='lable-col'>Net PP%:</label>
-            <input type='number' id='net_pp'/>
+            <input type='number' id='net_pp' step="0.001"/>
           </div>
           <div className='row2'>
             <label className='lable-col'>Net PK%:</label>
-            <input type='number' id='net_pk'/>
+            <input type='number' id='net_pk' step="0.001"/>
           </div>
           <div className='row2'>
             <label className='lable-col'>Shots/GP:</label>
-            <input type='number' id='shots_gp'/>
+            <input type='number' id='shots_gp' step="0.001"/>
           </div>
           <div className='row2'>
             <label className='lable-col'>SA/GP:</label>
-            <input type='number' id='sa_gp'/>
+            <input type='number' id='sa_gp' step="0.001"/>
           </div>
           <div className='row2'>
             <label className='lable-col'>FOW%:</label>
-            <input type='number' id='fow'/>
+            <input type='number' id='fow' step="0.001"/>
           </div>
         </div>
         
