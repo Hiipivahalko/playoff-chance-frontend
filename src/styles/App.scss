@@ -2,16 +2,17 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 3em;
-  padding-right: 3em;
+  //padding-left: 3em;
+  //padding-right: 3em;
+  padding-bottom: 1em;
   min-width: 1000px;
   width: auto;
   max-width: 1300px;
-  height: 97vh;
+  height: 95vh;
   max-height: 97vh;
   border: 4px solid #200a74;
-  padding-left: 10em;
-  padding-right: 10em;
+  padding-left: 2em;
+  //padding-right: 10em;
   box-shadow: 10px 15px tomato;
   overflow: auto;
 }
@@ -21,22 +22,15 @@
   text-align: center;
   color: #200a74;
   text-shadow: 3px 2px #00ffff;
-  margin-bottom: 5em;
+  //margin-bottom: 2em;
   margin-top: 2em;
-}
-
-img.logo {
-  width: 95%;
-  height: 95%;
-  object-fit: contain;
 }
 
 img.cup {
   display: inline;
-  width: '60px';
-  height: '60px';
-
-  
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
 }
 
 .main-container {
@@ -70,7 +64,7 @@ button {
   color: white;
   border: 6px solid #333333;
   box-shadow: 5px 5px rgb(179, 179, 179);
-  font-size: x-large;
+  font-size: large;
   font-weight:  normal;
   border-radius: 15px;
   margin: 20px;
@@ -98,7 +92,7 @@ button {
 }
 
 .text-team {
-  font-size: 2em;
+  font-size: medium;
   font-weight: 600;
 
   width: 15em;
@@ -110,10 +104,10 @@ button {
 }
 
 .text-team2 {
-  font-size: 2em;
+  font-size: medium;
   font-weight: 600;
-
-  width: 15em;
+  text-align: center;
+  width: auto;
 
   
 }
@@ -151,22 +145,30 @@ select:hover {
 .team-container {
   display: block;
   width: 100%;
-  margin-top: 4em;
+  margin-top: 1em;
 }
 
 .logo-box {
   display: block;
-  width: 20em;
-  height: 20em;
+  width: 10em;
+  height: 10em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+img.logo {
+  width: 99%;
+  height: 99%;
+  object-fit: contain;
 }
 
 .predict-btn {
-  width: 300px;
-  height: 100px;
+  width: 150px;
+  height: 60px;
   color: white;
   background-color: black;
   border: 6px solid #333333;
-  font-size: xx-large;
+  font-size: medium;
   box-shadow: 5px 5px rgb(179, 179, 179);
 }
 
@@ -183,8 +185,8 @@ select:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 250px;
-  height: 100px;
+  width: 150px;
+  height: 60px;
   background-color:  #c0392b ;
   box-shadow: 5px 5px  #cd6155 ;
   margin-left: auto;
@@ -195,8 +197,8 @@ select:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 250px;
-  height: 100px;
+  width: 150px;
+  height: 60px;
   background-color:   #d4ac0d  ;
   box-shadow: 5px 5px  #f7dc6f ;
   //margin: auto auto 0 0;
@@ -208,8 +210,8 @@ select:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 250px;
-  height: 100px;
+  width: 150px;
+  height: 60px;
   background-color:   #27ae60  ;
   box-shadow: 5px 5px  #7dcea0 ;
   margin-left: auto;
@@ -222,7 +224,7 @@ select:hover {
   justify-content: center;
   color: white;
   text-shadow: 2px 2px black;
-  font-size: xx-large;
+  font-size: large;
 }
 
 label {
@@ -233,7 +235,7 @@ label {
 .row {
   display: flex;
   width: 100%;
-  padding: 2em;
+  padding: 5px;
 }
 
 .row2 {
@@ -246,6 +248,7 @@ label {
 
 .col {
   display: inline;
+  //padding-left: 2em;
 }
 
 
@@ -255,7 +258,7 @@ label {
   //align-items: right;
   justify-content: right;
   text-align: right;
-  width: 50%;
+  width: 33%;
   height: auto;
 }
 
@@ -274,6 +277,16 @@ label {
   justify-content: center;
   height: auto;
   width: 50%;
+  padding: 1em;
+}
+
+
+.col5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 100%;
   padding: 1em;
 }
 
@@ -350,5 +363,6 @@ a, a:hover, a:focus, a:active {
 .form3 {
   display: flex;
   width: 100%;
-  margin-top: 7em;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }

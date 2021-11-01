@@ -38,6 +38,8 @@ const Prediction = ({team, predictChance}) => {
             <label className='lable-col'>GA/GP:</label>
             <input type='number' id='ga_gp'/>
           </div>
+        </div>
+        <div className='col2'>
           <div className='row2'>
             <label className='lable-col'>PP%</label>
             <input type='number' id='pp'/>

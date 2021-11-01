@@ -32,7 +32,7 @@ const Barcode = ({handleSubmit}) => {
         />
         <label className='lable-col'>80</label>
         </div>
-        <div className='col4'>
+        <div className='col5'>
           <button type='submit' className='predict-btn'>Predict</button>
         </div>
       </form>
