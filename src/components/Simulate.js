@@ -175,7 +175,7 @@ const Simulate = () => {
 
   return (
     <>
-      <h1>Simulate season 2021-2022 current, standing (01.11.21)</h1>
+      <h1>Simulate season 2021-2022, current standing (01.11.21)</h1>
       <a href='https://www.nhl.com/standings/2021/division' target="_blank">nhl.com/standings/2021/division</a>
       <SelectForm teams={teams} selectTeam={selectTeam}/>
 
