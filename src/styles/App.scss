@@ -268,7 +268,7 @@ label {
   width: 50%;
   align-items: center;
   justify-content: center;
-  border-left: 3px solid darkgrey;
+  //border-left: 3px solid darkgrey;
 }
 
 .col4 {
@@ -298,9 +298,20 @@ label {
   width: auto;
 }
 
+.lable-col2 {
+  //display: block;
+  //padding: 0;
+  color: rgb(56, 56, 56);
+  font-size: medium;
+  width: auto;
+}
+
+
 form {
   display: flex;
   width: 100%;
+  padding-top: 3px;
+  //border-top: 3px solid darkgrey;
 }
 
 input {

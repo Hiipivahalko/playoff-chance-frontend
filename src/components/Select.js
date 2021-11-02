@@ -8,7 +8,7 @@ const Select = () => {
   return (
     <div className='main-container'>
       <Link to='/simulate'>
-        <button className='start-btn' >Simlute season 2018-2019</button>
+        <button className='start-btn' >Simlute season 2021-2022</button>
       </Link>
       <Link to='/input'>
         <button className='start-btn' >Give input</button>
