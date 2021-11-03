@@ -16,4 +16,4 @@ Then start application
 
 `npm start`
 
-and application is running at `http://localhost:3000/``
+and application is running at `http://localhost:3000/`
