@@ -21,7 +21,7 @@ const Header = () => {
       <Link to='/'>
         <img className="cup" src={cup} alt='stanley cup'/>
       </Link>
-      <h1>Change to Playoff</h1>
+      <h1>Chance to Playoff</h1>
       <Link to='/simulate'>
         <button className='menu-btn' >Simulate</button>
       </Link>
